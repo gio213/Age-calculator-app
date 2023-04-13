@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(assets/fonts/Poppins-Bold.ttf);
+  font-family: "Poppins Bold Italic";
+  src: url(assets/fonts/Poppins-BoldItalic.ttf);
+  font-family: "Poppins Extra Bold";
+  src: url(assets/fonts/Poppins-ExtraBold.ttf);
+  font-family: "Poppins Extra Bold Italic";
+  src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  font-family: "Poppins Italic";
+  src: url(assets/fonts/Poppins-Italic.ttf);
+  font-family: "Poppins Regular";
+  src: url(assets/fonts/Poppins-Regular.ttf);
+}
+:root {
+  /* Primary Colors ###*/
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  /* Natural Colors ###*/
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Light-grey);
+  padding: 5%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Off-white);
+  border-radius: 15px 15px 100px 15px;
+  padding: 10% 2% 2% 2%;
+  gap: 5rem;
+}
+
+.inputDiv {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input {
+  width: 85%;
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid var(--Light-grey);
+  box-shadow: 0 0 5px var(--Light-grey);
+  font-weight: bolder;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.inputSubDiv {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h1 {
+  font-family: "Poppins Bold";
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--Smokey-grey);
+}
+.line {
+  width: 90%;
+  height: 0px;
+  border: 1px solid var(--Light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lineImgDiv {
+  background-color: var(--Purple);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: url(assets/images/icon-arrow.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+
+.resultDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.resultDiv h2 {
+  font-family: " Poppins Bold";
+  font-weight: 900;
+  color: var(--Purple);
+  font-size: 4rem;
+  display: inline-block;
+}
+
+.resultDiv p {
+  font-family: "Poppins Bold";
+  font-weight: 900;
+  color: var(--Off-black);
+  font-size: 3rem;
+  display: inline-block;
+}
